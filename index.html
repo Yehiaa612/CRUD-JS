@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+</head>
+<body>
+
+    <div   class="formInput form w-75 m-auto py-4 ">
+        <h1 class="text-center text-dark top "> CRUD Project</h1>
+
+        <div>
+            <label class="mt-3" for="pn">Product Name:</label>
+            <input id="pn" type="text" class=" form-control" placeholder="Enter Name.">
+            <span  id="nameError" class="error-message"></span>
+
+        </div>
+        <div>
+            <label class="mt-3" for="pp">Product Price:</label>
+            <input id="pp" type="number" class=" form-control " placeholder="Enter Price.">
+            <span  id="priceError" class="error-message"></span>
+
+        </div>
+
+        <div>
+            <label class="mt-3" for="pc">Product Category:</label>
+            <input id="pc" type="text" class=" form-control " placeholder="Category.">
+            <span  id="categoryError" class="error-message"></span>
+
+        </div>
+        <div>
+
+            <label class="mt-3" for="pd">Product Description:</label>
+            <textarea style="resize: none;" id="pd"  class=" form-control " placeholder="Description."></textarea>
+            <span  id="descriptionError" class="error-message"></span>
+
+        </div>
+  
+
+        <div class="mt-3" id="buttons">
+            <button id="addButton" onclick="addNewProudct()" class="btn btn-outline-success btn-lg "> Add </button>
+            <button id="updateButton" onclick="updatedProduct(temp) " class="btn btn-outline-warning btn-lg d-none"> Update </button>
+
+            <button onclick="clearInput()" class="btn btn-outline-danger btn-sm "> Clear Form </button>
+            <input id="search"  type="search" onkeyup="searchElement(this.value)" class="form-control my-3" placeholder="Search..">
+        </div>
+
+
+        <table class="table table-striped mt-4 text-center ">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th class="text-warning" >Upadte</th>
+                    <th class="text-danger">Delete</th>
+                </tr>
+    
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ by <a href="https://www.linkedin.com/in/yehia-ashraf-8a090525a" target="_blank">Yehia Ashraf</a></p>
+    </footer>
+
+
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+
+h1 {
+    background: linear-gradient(#fd7e14, #dc3545);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.error-message {
+    color: red;
+    margin-top: 5px; /* Adds space above the error message */
+    font-size: 12px;
+}
+
+/* Invalid input */
+
+footer {
+    background: linear-gradient(45deg, #fd7e14, #dc3545);
+    text-align: center; /* Center the text */
+    position: fixed;
+    bottom: 0px;
+    padding:  12px; /* Add some padding */
+    width: 100%; /* Full width */
+    font-size: 14px; /* Font size */
+}
+
+footer a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
